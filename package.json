@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "pre-commit": "lint-staged",
+    "check": "lint-staged",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
@@ -17,6 +17,9 @@
   },
   "hooks": {
     "pre-commit": "yarn lint-staged"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": "eslint --fix"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
