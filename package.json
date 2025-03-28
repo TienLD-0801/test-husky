@@ -15,6 +15,9 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
+  "hooks": {
+    "pre-commit": "yarn lint-staged"
+  },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
     "@types/react": "^19.0.10",
